@@ -1,1 +1,13 @@
-assg
+SPRING REST FOODIE SERVICE
+
+This program is a RESTful webservice that uses the Geocodio and Zomato APIs to take an address and present a list of restaurants in the nearby vicinity
+
+Geocodio takes an address and returns the latitude and longitude of the address
+
+The latitude and longitude are then sent through the Zomato API to retrieve a list of restaurants that we present to the user
+
+All return objects come as JSON
+
+To run:
+
+Run in eclipse, localhost:8080
