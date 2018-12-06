@@ -1,6 +1,6 @@
 SPRING REST FOODIE SERVICE
 
-This program is a RESTful webservice that uses the Geocodio and Zomato APIs to take an address and present a list of restaurants in the nearby vicinity
+This program is a RESTful webservice that uses the Geocodio and Zomato APIs to take an address and present a list of restaurants in the nearby vicinity.  To achieve this we use Spring Rest and Spring Boot frameworks.
 
 Geocodio takes an address and returns the latitude and longitude of the address
 
