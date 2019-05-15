@@ -34,7 +34,7 @@ public class RestaurantController {
     		temp.add(error);
     		return new ResponseEntity<List<Restaurant>>(temp, HttpStatus.BAD_REQUEST);
     	}
-    	final String geoURI = "https://api.geocod.io/v1.3/geocode?q="+address+"&api_key=ebdf3e5ecc5d275daedf252d735bc931ddbe745";
+    	final String geoURI = "https://api.geocod.io/v1.3/geocode?q="+address+"&api_key=your_api_key_here";
     	System.out.println("Address is: "+address);
     	RestTemplate rt = new RestTemplate();
     	ResponseEntity<String> result = rt.exchange(geoURI, HttpMethod.GET, null, String.class);
@@ -75,7 +75,7 @@ public class RestaurantController {
     	RestTemplate rs = new RestTemplate();
     	HttpHeaders headers = new HttpHeaders();
     	headers.setContentType(MediaType.APPLICATION_JSON);
-    	headers.add("user-key", "2e2b7741d56c62ed1e82f85e0a80a751");
+    	headers.add("user-key", "your_api_key_here");
     	HttpEntity<String> entity = new HttpEntity<String>(headers);
     	ResponseEntity<String> zomatoResult = rs.exchange(zomatoURI, HttpMethod.GET, entity, String.class);
     	HttpStatus statusCodeZomato = result.getStatusCode();
